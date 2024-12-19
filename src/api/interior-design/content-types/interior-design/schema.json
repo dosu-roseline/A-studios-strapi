@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interior_designs",
+  "info": {
+    "singularName": "interior-design",
+    "pluralName": "interior-designs",
+    "displayName": "interior-design",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "overview": {
+      "type": "text",
+      "required": true
+    },
+    "teamMember": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
